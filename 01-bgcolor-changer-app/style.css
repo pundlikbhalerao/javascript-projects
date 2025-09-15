@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #8b8989;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.btn {
+  width: 140px;
+  height: 40px;
+  border-radius: 12px;
+  border: 2px solid rgb(10, 10, 10);
+}
+#orange {
+  background-color: orange;
+}
+
+#violet {
+  background-color: violet;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#black {
+  background-color: black;
+}
+
+#green {
+  background-color: green;
+}
+
+#white {
+  background-color: white;
+}
