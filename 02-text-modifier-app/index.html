@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Font Size Task</title>
+</head>
+
+<body style="background-color: #a19b9bf3; color: #fff">
+  <button id="sizeBtn">Increase Font Size</button>
+  <h2 id="heading">Welcome to My Page</h2>
+
+  <script>
+    let heading = document.getElementById("heading");
+    let button = document.getElementById("sizeBtn");
+
+    let fontSize = 20; 
+    heading.style.fontSize = fontSize + "px";
+
+    button.addEventListener("click", () => {
+      fontSize += 10;
+      heading.style.fontSize = fontSize + "px";
+    });
+  </script>
+  
+</body>
+</html>
+
+  <script src="script.js"></script>
+</body>
+</html>
