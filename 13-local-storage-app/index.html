@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Local Storage</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Students Detail</h1>
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Enter Your Name" id="name" />
+        <div>
+          <label for="marks">Marks:</label>
+          <input type="number" placeholder="Enter Your Marks" id="marks" />
+        </div>
+      </div>
+      <button onclick="addStudents()">Add</button>
+      <hr />
+      <h2>Students Data</h2>
+      <ul id="studentList"></ul>
+    </div>
+  </body>
+</html>
