@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box; /* सगळ्या एलिमेंटसाठी बॉक्स साइजिंग */
+  margin: 0; /* डिफॉल्ट margin काढले */
+  padding: 0; /* डिफॉल्ट padding काढले */
+  color: white; /* टेक्स्ट पांढरा ठेवला */
+}
+
+section {
+  display: flex; /* flexbox layout */
+  justify-content: center; /* horizontal सेंटर */
+  align-items: center; /* vertical सेंटर */
+  height: 100vh; /* पूर्ण viewport उंची */
+  width: 100%; /* पूर्ण रुंदी */
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(image1.jpg); /* बॅकग्राऊंड इमेज */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+section .layer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-image: url(image1.jpg); /* background image पुन्हा */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+section .layer:nth-child(1) {
+  filter: blur(10px); /* पहिला layer blur */
+}
+
+section .layer:nth-child(2) {
+  clip-path: circle(50px at var(--x) var(--y)); /* दुसऱ्या layer ला गोल कट */
+}
+
+section .layer h2 {
+  position: absolute;
+  font-size: 20vw; /* मोठा हेडिंग */
+  transform: translate(0, 0);
+}
+
+.hover {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border: 2px solid #fff;
+  left: -150px;
+  top: -150px;
+  border-radius: 50%;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+  top: -150px;
+  left: -150px;
+  transform: translate(var(--x) - 50%), calc(var(--y) - 50%);
+}
