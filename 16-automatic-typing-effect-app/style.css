@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    font-family: sans-serif;
+    background-color: teal;
+}
+
+h1 {
+    font-size: 4rem;
+    color: darkgrey;
+}
+
+span {
+    color: #fafafa;
+    display: inline-flex;
+    align-items: center;
+}
+
+span::after {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height:  55px;
+    background-color: #fafafa;
+    margin-left: 4px;
+}
