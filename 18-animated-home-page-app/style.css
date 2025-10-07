@@ -1,0 +1,57 @@
+body {
+  margin: o;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  text-align: center;
+}
+
+h1 {
+  font-size: 100px;
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.3);
+  initial-letter: 4px;
+}
+
+.btn {
+  background-color: blue;
+  color: white;
+  font-size: 25px;
+  border: 4px solid;
+  cursor: pointer;
+  transition: 1s background-color;
+  white-space: nowrap;
+  padding: 20px 40px;
+}
+.btn:hover {
+  background-color: white;
+  color: blue;
+}
+.split {
+  width: 50%;
+  height: 100%;
+  top: 0;
+  overflow: hidden;
+}
+.split.left {
+  position: absolute;
+  left: 0;
+  background-color: red;
+  background-size: cover;
+}
+.split.right {
+  position: absolute;
+  right: 0;
+  background-color: yellow;
+  background-size: cover;
+}
+.active-left .left {
+  width: 75%;
+}
+.active-left .right {
+  width: 25%;
+}
+.left,
+.right {
+  transition: 2s ease-in-out;
+}
