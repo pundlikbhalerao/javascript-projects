@@ -1,0 +1,14 @@
+body {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(134, 246, 246);
+}
+
+.gallery img {
+  width: 18vw;
+  height: 18vh;
+  object-fit: cover;
+  margin-top: 20px;
+  justify-content: space-evenly;
+}
