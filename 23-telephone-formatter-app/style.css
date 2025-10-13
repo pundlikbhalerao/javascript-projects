@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+    background-color: rgb(225, 83, 85);
+    color: rgb(251, 250, 247);
+}
+
+input {
+    font-size: 1.5rem;
+}
