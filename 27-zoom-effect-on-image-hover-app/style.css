@@ -1,0 +1,19 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eef2f3;
+  margin: 0;
+}
+
+.zoom {
+  width: 400px;
+  height: 300px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  cursor: zoom-in;
+  transition: background-size 0.3s ease;
+}
