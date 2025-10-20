@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>image changer</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="css">
+            <label for="width">Width:</label>
+            <input id="width" type="range" name="width" min="0" max="100" value="5" data-sizing="%">
+
+            <label for="border">Border-Radius:</label>
+            <input id="border-radius" type="range" name="border-radius" min="0" max="100" value="5" data-sizing="px">
+
+            <label for="base">Base-Color:</label>
+            <input id="base" type="color" name="base" value="#ff0000">
+
+            <label for="padding">Padding:</label>
+            <input id="padding" type="range" name="padding" min="0" max="100" value="0" data-sizing="px">
+
+            <label for="blur">Blur:</label>
+            <input id="blur" type="range" name="blur" min="0" max="100" value="0" data-sizing="px">
+
+        </div>
+        <img src="image1.jpg">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
