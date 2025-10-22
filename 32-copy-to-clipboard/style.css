@@ -1,0 +1,15 @@
+button {
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  border-radius: 2px;
+  background-color: #333;
+  color: white;
+}
+.message {
+  opacity: 0;
+}
+
+.after_click {
+  opacity: 1;
+}
