@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="clock" id="clock"></div>
+      <div id="day"></div>
+    </div>
+
+    <script>
+      let clock = document.getElementById("clock");
+      let day = document.getElementById("day");
+      setInterval(() => {
+        let date = new Date();
+        clock.innerHTML = date.toLocaleTimeString();
+        let displayDay = date.toDateString();
+        day.innerHTML = displayDay;
+      }, 1000);
+    </script>
+  </body>
+</html>

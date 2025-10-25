@@ -1,0 +1,28 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(14, 14, 13);
+}
+.clock {
+  color: #f5eded;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: arial;
+  margin-top: 100px;
+  font-size: 140px;
+  font-weight: 900;
+  height: 100%;
+  text-shadow: 2px 2px rgb(246, 248, 246);
+}
+
+#day {
+  color: #f5eded;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: arial;
+  font-size: 50px;
+  font-weight: 600;
+  height: 100%;
+  text-shadow: 2px 2px rgb(144, 242, 178);
+}
