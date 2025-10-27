@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Light Effect</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: radial-gradient(circle at center, #fff 0%, #87CEFA 20%, #45f999 80%);
+      transition: background 0.1s;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    document.addEventListener('mousemove', (e) => {
+      const x = e.clientX / window.innerWidth * 10;
+      const y = e.clientY / window.innerHeight * 10;
+      document.body.style.background = `radial-gradient(circle at ${x}% ${y}%, #ffffff, #87CEFA, #1E90FF)`;
+    });
+  </script>
+</body>
+</html>
