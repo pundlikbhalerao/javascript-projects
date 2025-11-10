@@ -7,11 +7,15 @@ let radius = 380;
 let autoRotate = true;
 let rotateSpeed = -12;
 
+
+
 const ground = document.getElementById("surface-area");
 if (ground) {
   ground.style.width = radius * 2 + "px";
   ground.style.height = radius * 0.3 + "px";
 }
+
+
 
 function init(delayTime) {
   const count = arr.length;
@@ -23,6 +27,7 @@ function init(delayTime) {
     arr[i].style.transitionDelay = `${delay}s`;
   }
 }
+
 
 setTimeout(() => init(), 100);
 
